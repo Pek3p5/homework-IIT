@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">  
+  <base href="http://terraria.comm/">
+  <title>Terraria</title>
+  <link href="css/styles.css" rel="stylesheet">
+  <script src="javascript/scripts.js"></script>
+  <link rel="icon" href="data:image/jpeg;base64,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">
+  <style>
+    .p_1{
+letter-spacing: 0.6em;
+word-spacing: 10px;
+line-height: 1.5;
+text-indent: 30px;
+}
+   .p_2{
+    letter-spacing: 0.2em;
+    word-spacing: 3px;
+    line-height: 1;
+    text-indent: 1%;
+    }
+    .redline{
+    text-indent: 3%;
+    line-height: 1.5;
+    }
+    
+
+    </style>
+</head>
+<body>
+  <p >
+    <!--Шапка-->
+  <header class="site_header">
+    <h1 class="site_name">Terraria</h1>
+    
+    
+    
+    <!--  Панель навигации по сайту  -->
+    <nav class="site_nav"> 
+      <!-- Ссылки на страницы сайта -->
+      <a href="#Боссы">Боссы</a>
+      <br><a href="Классы">Классы</a>
+    </nav>
+  </header>
+    
+<!-- -------- Боковая панель -------- -->
+    <aside class="site_aside">
+        <div class="adv_block" id="adv1">
+       <a href= "zoo-ekzo.com">На прошедшей конференции Beshesda Тодд Говард заявил: "В связи с последнеми событиями на Украине, лучшим решением для составления мирного договора между воюющими странами будет государственная закупка TES V: Skyrim. КУПИТЕ SKYRIM, ПОЖАЛУЙСТА!!!</a>
+       
+       
+        </div>
+        <div class="adv_block" id="adv2">
+        <a href= "z-veri.ru">Игрок в Diablo:Immortal настолько много донатил в игру, что уже не может найти себе противника.</a>
+        </div>
+         
+      </aside>
+      
+    <article>
+      <!--Основная часть-->
+   
+    <h1>
+    <p id = "#Боссы">Боссы</p>
+    </h1>
+    <p class="redline">
+      <br><b>Король слизней</b></br>
+      <br>Король слизней это большой синий слизень, у которого имеется 2000 жизней. Король слизней довольно редко может появится сам по себе, также его можно призвать с помощью короны слизней. Если держать водяную свечу, то можно увеличить вероятность появления Короля слизней (если стоять с Водяной свечой весь день или ночь, то есть примерно 50%-ый шанс появления Короля слизней). Вы можете также использовать боевое зелье, чтобы увеличить вероятность его появления. Король слизней является хорошей проблемой для начинающего игрока, и может быть легко побежден с помощью правильного использования местности.
+      После победы над Королем слизней, с него падает 1 золотая монета, и одна из частей одежды ниндзя.</br>
+      <br><b>Глаз Ктулху</b></br>
+      <br>Глаз Ктулху может появиться: если у игрока больше 10 сердец (200 ед. здоровья), не менее 10 ед. защиты и трех НПС, и он ещё не победил Глаз Ктулху. Он так же может быть призван с помощью подозрительно выглядящего глаза в ночное время суток (если попытаться вызвать босса днем, то ничего не произойдет).
+      Так как этот босс может появиться без преднамеренных действий со стороны игрока, он часто является первым боссом, с которым сталкивается игрок. Также, он является одним из простых боссов, наравне с Пожирателем миров. Глаз Ктулху является серьёзной проблемой для новых игроков. Он проходит через блоки, и порождает Слуг Ктулху.</br>
+      <br><b>Пожиратель миров</b></br>
+      <br>Пожиратель миров появляется когда вы разрушили 3 теневые сферы. Эти сферы находятся в порче, окружены эбонитом. Эбонит можно сломать только с помощью кирки высокого уровня (Кошмарная кирка и Литая кирка), бура, бомб или динамита. При применении на эбоните очищающего порошка, можно превратить его в камень. Саму теневую сферу можно разбить только молотом, мотобуром, бомбой или динамитом. Также босса можно вызвать с помощью корма для червя. Пожирателя миров можно вызвать только в порче, если вы выйдите из порчи, босс улетит и пропадет.
+      Пожиратель миров может быть проблемой даже для игроков среднего уровня, так как это большой червь, который проходит сквозь блоки, и состоит из множества сегментов, которые атакуют игрока. Кроме того, при уничтожении "внутренних" сегментов червя происходит деление босса на 2 более коротких части, каждая из которых будет действовать как отдельный босс. Чтобы победить этого босса, нужно уничтожить каждую секцию этого босса.
+      Убийство Пожирателя миров является единственным способом получения теневой чешуйки. Так же, с него падает большое количество демонитовой руды и малых лечебных зелий.</br>
+      <br><b>Мозг Ктулху</b></br>
+      <br>Мозг Ктулху появляется при разрушении 3 Багровых сердец. Эти сердца находятся в багрянце, окружены багровым камнем. Багровый камень можно сломать только с помощью кирки высокого уровня (Кошмарная кирка и Литая кирка), бура, бомб или динамита. При применении на багровом камне очищающего порошка, можно превратить его в камень. Также босса можно вызвать с помощью кровавого позвоночника. Мозг Ктулху можно вызвать только в багрянце.
+      Мозг Ктулху имеет только 1,000 HP, но он также имеет две формы: в первой форме мозг не наносит игроку урона (урон игроку наносят крадущиеся), а также мозг будет игнорировать весь урон который будет наносить ему игрок, пока мозг не перейдет во вторую стадию. Во второй стадии мозг уже будет телепортироваться, и пытаться таранить игрока. В отличии от других боссов, Мозг Ктулху не имеет устойчивости к откидыванию.</br>
+      Мозг Ктулху является единственным источником образцов ткани, также с босса падает довольно много багротановой руды.</br>
+      <br><b>Королева пчел</b></br>
+      <br>Королеву пчел можно призвать, уничтожив кокон, который находится в пчелином улье, в подземных джунглях. Также её можно призвать с помощью пчелиной массы, но только в джунглях. Убийство Королевы пчел является единственным способом получить воск.</br>
+      <br><b>Скелетрон</b></br>
+      <br>Скелетрон является боссом данжа, вызвать которого можно только ночью (желательно вызвать босса в начале ночи, так как если его не победить до конца ночи, то Скелетрон мгновенно убьёт вас, нанеся немалое количество урона). Чтобы вызвать Скелетрона, нужно подойти к старику (обязательно ночью), который стоит около входа в данж, и поговорить с ним.
+      После победы над Скелетроном, вы сможете войти в данж. Вас больше не будет убивать страж данжа.</br>
+      <br<b>Стена плоти</b></br>
+      <br>Стену Плоти можно вызвать кинув куклу вуду гида в лаву (в Преисподне), но в таком случае НИП Гид погибнет(если Гида нет то ничего не случится и босс не призовётся) так же можно сбросить самого Гида. Босс имеет 8000 HP. Стена плоти — это тяжелейший босс, после убийства которого, ваш мир перейдет в сложный режим. Также после убийства босса вы получите святой молот, с его помощью вы сможете разбивать Алтари.</br>
+      <br><b>Боссы сложного режим</b></br>
+      <br>Боссы сложного режима значительно сложнее боссов, которые были в обычном режиме. Некоторые из них являются модернизированными версиями боссов обычного режима.
+      Каждый из них имеет свой ​​особый путь призыва, и предупреждающие сообщения появляются всякий раз, когда один вот-вот появится. Победа над боссом сопровождается сообщением в чате.
+      После перехода в сложный режим ночью есть 50%-ый шанс появления одного из трех механических боссов, которые ещё не были побеждены.</br>
+      <br><b>Королева слизней</b></br>
+      <br>Королева слизней - это босс сложного режима, который является усложнённой версией Короля слизней. Имеет 36,720 максимальное количество здоровья. Она не может появиться сама по себе, но её можно вызвать с помощью желатинового кристалла только в Освящении. В первой форме Королева слизней будет наскакивать на игрока (намного быстрее, чем Король слизней) и "плеваться" кристаллами в разных направлениях. А во второй форме у неё появятся крылья, и босс будет летать над игроком, именно в него кидаясь кристаллами.</br>
+      <br><b>Близнецы</b></br>
+      <br>Близнецы являются усложненной версией глаза Ктулху. Они могут быть призваны с помощью механического глаза. Оба глаза имеют свой собственный индивидуальный счетчик жизни. Красный — Ретиназер, стреляет фиолетовым лазером из глаза. Зелёный — Спазматизм, стреляет потоком проклятого пламени. Также, как и Глаз Ктулху, после потери половины здоровья они меняются. Ретиназер меняется когда уровень его здоровья падает до 8,000 HP, а Спазматизм меняется когда уровень его здоровья меньше 9,000 HP.
+      Оба глаза имеют разные стили боя, Ретиназер становится похож на механический глаз с лазерной башней в зрачке, в то время как Спазматизм становится механическим ртом. После изменения Ретиназер начнет стрелять красными лазерами более агрессивно и наносит больше урона. Он будет чередовать быструю стрельбу на малой скорости передвижения с медленной стрельбой на высокой скорости передвижения. Спазматизм начнет быструю погоню за игроком и будет постоянно извергать пламя из своего рта, подобно огнемету. Проклятый огонь Спазматизма может наложить дебафф «Проклят адом» на игроков.</br>
+      <br><b>Уничтожитель</b></br>
+      <br>Уничтожитель — это более сильная версия Пожирателя миров, у босса имеется 80,000 HP. Считается простым боссом сложного режима не смотря на наличие большого количества здоровья. Можно вызвать с помощью механического червя. Он не разделяется на части, как Пожиратель миров, но при поражении сегмента тела освобождается заключенный туда летающий дрон, стреляющий лазером. Кроме обычной таранящей атаки, Уничтожитель ещё стреляет в игрока красными лазерами из каждого своего сегмента. Лазеры проходят через платформы, но не проходят сквозь блоки.</br>
+      <br><b>Скелетрон Прайм</b></br>
+      <br>Скелетрон Прайм является куда более сложным аналогом Скелетрона, так как имеет 28,000 HP. Все его конечности различны, у него есть: лазер, пила, тиски и пушка, стреляющая бомбами. Все руки Скелетрона Прайма имеют 59,000 HP. Но, для убийства босса, достаточно убить только голову. Босс должен быть вызван ночью и убит до конца ночи. В противном случае, к утру характеристики босса станут такими же, как и у стража данжа, и убить его будет почти невозможно.
+      С босса выпадают эссенция ужаса и святые слитки, из которых можно сделать хорошее снаряжение.</br>
+      <br><b>Плантера</b></br>
+      <br>Плантера призывается после разрушения бутона Плантеры киркой или буром. Бутон Плантеры появляется в подземных джунглях только после того, как были побеждены все три механических босса (До версии 1.2.3 нужно было убить только одного механического босса).
+      В первой фазе она выглядит как бутон розы, что делает её менее устрашающей. Передвигается с помощью крюков, которые наносят урон при контакте. ​Атакует шипами и крюками (при передвижении). Чем меньше у босса здоровья, тем быстрее его скорострельность. При потере >25 % здоровья выпускает множество больших отскакивающих шипов, которые является очень опасными, так как не пропадают ещё долгое время. При потере более 50 % здоровья Плантера переходит во вторую фазу. Во второй фазе Плантера теряет свой бутон, превращаясь в огромного людоеда со множеством маленьких щупалец, которые выпускают шипы и наносят урон при контакте. В этой фазе босс передвигается быстрее и пытается протаранить игрока.</br>
+      <br><b>Голем</b></br>
+      <br>Голем призывается с помощью ящщерового элемента питания (их можно найти в сундуках внутри храма джунглей или выбить с ящеров) на алтаре ящеров в храме джунглей. Чтобы получить доступ к храму ящеров, вы должны убить Плантеру и открыть храм ящеров ключом, который с неё выпал.
+      В первой фазе Голем будет стрелять огненными шарами, бросаться в игрока кулаками и иногда прыгать. Когда у головы Голема остается меньше половины здоровья, она начнет стрелять лазерами. Вторая стадия наступает когда вы «убьете» голову Голема. После этого голова оторвется, начнет стрелять лазерами и будет летать над самим телом игнорируя любой урон. Кроме этого, Голем начнет быстрее двигаться. Босса в этой фазе можно уничтожить только убийством тела.</br>
+      <br><b>Императрица света</b></br>
+      <br>Императрица света - это босс сложного режима, который имеет 70,000 HP. Её можно вызвать, убив призматическую златоглазку в Освящении после убийства Плантеры. Императрица света атакует следующим образом: в первой фазе она летает над игроком, стреляя в него разноцветными снарядами, а во второй фазе она помимо снарядов будет пускать в ход и призматические линии, которые всегда наводятся на игрока. Лучше босса убивать ночью, так как днём она атакует с бешеной силой и убивет игрока с одного удара, хотя если её убить днём, то из неё выпадет Террапризма со 100% шансом. Также неплохо было бы иметь Ключ НЛО, который можно получить только после победы над Големом.
+      Из Императрицы света выпадают довольно хорошие нужные и вещи, что позволит легче и быстрее победить финального босса игры.</br>
+      <br><b>Герцог Рыброн</b></br>
+      <br>Герцог Рыброн - это гибрид рыбы и свиньи-дракона с 50,000 HP и 50 защиты. Призвать босса можно только в океане (в любое время суток) с помощью трюфельного червя, насаженного на удочку и опущенного в океан.
+      Первая фаза: 1. Делает несколько быстрых последовательных выпадов на игрока, легко может догнать даже в полёте. Урон ~100. 2. Останавливается в стороне от игрока, вызывает 2 торнадо. Торнадо стоит на месте и не преследует игрока, сам смерч наносит урон игроку (~100). Через несколько секунд из торнадо вылетают акулоны в сторону игрока, нанося урон при касании (урон ~100), акулы могут быть убиты игроком. 3. Останавливается в стороне от игрока и стреляет взрывающимися пузырями, следующими за игроком. Пузыри наносят ~100 урона, могут быть уничтожены игроком. 4. Выпускает одно самонаводящееся кольцо. Вторая фаза (при 25000 здоровья): У герцога Рыброна начинают светиться Глаза, сам он темнеет. Урон при касании увеличивается до 150 , увеличивается скорость передвижения. 1. Атака с пузырями усиливается. Герцог кружит в стороне от игрока и пускает взрывающиеся пузыри. Урон пузырей увеличивается до 150. 2. Торнадо становятся больше по высоте, наносят больше урона (~150) и длятся дольше. 3. Выпускает несколько самонаводящихся водяных колец. 4. Продолжает быстро летать. Он является одним из самых сложных боссов в игре, но сражение с ним можно облегчить, если надеть крылья.</br>
+      <br><b>Лунатик-сектант</b></br>
+      <br>Лунатик-сектант призывается при убийстве 4 сектантов, которые появляются на входе в Темницу после победы над Големом. После победы над ним начинаются Лунные события.
+      Хоть у Лунатика-сектанта есть только одна фаза, его атаки становятся всё сильнее с уменьшением здоровья. Он умеет летать, используя при этом свои атаки: огненные шары, создание электрической сферы, которая стреляет молниями по кругу, создание гигантской снежинки которая пускает осколки льда в игрока, теневые огни и выстрел 5 разрушаемых сфер. Также время от времени создаёт копии себя в попытке призвать Дракона-фантома. Если при этом нанести урон настоящему Лунатику, процесс прервётся и он продолжит атаковать вас, как и прежде. Но если нанести урон одному из его клонов или не атаковать вообще, то дракон появится и начнёт наносить дополнительный урон игроку (если процесс повторится ещё раз до того, как вы убьете первого дракона, призовётся Древнее видение).</br>
+      <br><b>Лунный Повелитель</b></br>
+      <br>Лунный Повелитель — финальный босс Террарии в версии 1.3.0.5, из которого выпадают самые мощные предметы в игре. Победить его в одиночку может оказаться очень трудным испытанием даже с самой лучшей экипировкой. Он появляется после победы над всеми 4 Небесными башнями во время Лунных событий, или после использования Небесной печати.
+      У Лунного Повелителя есть 2 руки и голова, которые следует "убивать", нанося урон по глазам на них. Когда все три глаза уничтожены, открывается ядро — сердце, которое также нужно разрушить. Руки стреляют самонаводящимся снарядами и могут призвать фантомные версии Истинного глаза Ктулху, чтобы бросать их в игрока.
+      Голова время от времени будет стрелять очень мощным Фантомным лучом смерти, который пронесется по всему экрану в направлении игрока, после этого выстреливая наводящиеся снаряды так же, как и руки. Когда один из глаз побежден, на его месте появится Истинный глаз Ктулху, который будет преследовать игрока и призывать фантомные версии себя, которые будут передвигаться вокруг него и бросаться на игрока. Время от времени он будет призывать миниатюрные версии Истинного глаза Ктулху. После убийства всех 3 глаз, его ядро станет уязвимым. После уничтожения ядра Лунный Повелитель будет побеждён.</br>
+      <br><b>Боссы событий</b></br>
+      <br><b>Летающая тарелка марсиан</b></br>
+      <br>Летающая тарелка марсиан - это мини-босс события Марсианское безумие. Он появится, если событие завершено на 30% и более. Для того, чтобы её победить, нужно для начала разрушить 4 турели на боссе, которые в общей сумме имеют 17,000 HP. Затем нужно убить саму тарелку - у неё 10,000 здоровья. В режиме эксперта и мастера после уничтожения четырёх турелей, босс будет наносить смертельный урон.
+      Для укрытия от босса можно построить небольшую комнату и атаковать его оружием, которое проходит сквозь блоки (например, одержимый топорик или демоническая коса). Из летающей тарелки марсиан может выпасть ключ НЛО, с помощью которого игрок может бесконечно летать.</br>
+      <br><b>«Летучий голландец»</b></br>
+      <br>Это мини-босс события Нашествие пиратов. Он появляется, если убить определённое количество пиратов. Чтобы победить босса, нужно уничтожить 4 голландских пушки, каждая из которых имеет 2,000 HP. Эти пушки могут стрелять, наносят 60 урона дальнего боя, и 30 урона ближнего боя. Если игрок уничтожит все четыре пушки, то Летучий Голландец развалится. Из него могут выпасть следующие предметы: денежная пушка, счастливая монета, дисконтная карточка, пиратский посох и абордажная сабля.</br>
+      <br><b>Плакучий древень</b></br>
+      <br>Плакучий древень - это один из мини-боссов, который появляется, начиная с 4-ой волны Тыквенной луны. Появляется он странно: выпрыгивает из-под земли прямо на игрока. Убить его несложно, но у босса имеется 2 вида атак: 1. Стреляет в игрока смесью, которая, когда попадает в твёрдый блок, несколько секунд остаётся у блока; 2. Стреляет другими снарядами, которые пролетают сквозь блоки, хотя наносят урон поменьше. Имеет 12,000 HP и 120 ед. урона. А вот выпасть из Плакучего древня может жуткая древесина (30-50 шт.), жуткая ветвь, проклятое растение, жуткий крюк, коломёт с колами и свиток некроманта Шанс выпадения предметов увеличивается с каждой волной.</br>
+  </p>
+    <h1 id ="#Классы"> Классы </h1>
+   <p> Классы персонажа — условные типы персонажа в игре, определяющие его умения и направление дальнейшего прохождения, для которых характерно то или иное снаряжение. <br>Также можно заметить, что выбор класса — это всего лишь условное объяснение, так как в игре вам не предстоит выбирать его буквально.</br>Но если Вы всё-таки выберете какой-нибудь класс, то вам будет легче в развитии своего персонажа.</br>
+    <br>В игре имеются всего 4 основных класса (что доказывает наличие такого же количества классовых эмблем). </br>
+    <br><b>Воин</b></br>
+    <br> Воин (Warrior) - класс, делающий ставку на ближнее оружие (Мечи, Копья, Боевые цепи) и дистанционное с очень ограниченным радиусом поражения (Стреляющие Мечи, Бумеранги). Класс обладает высокой защитой, геймплей при игре за воина подразумевает непосредственный контакт с врагом (Взрывающаяся броня, Бонусы от атак ближнего боя и т.д.)</br>
+    <br>Лучшей броней для данного класса является броня солнечной вспышки</br>
+    <br>Лучшей модификацией оружия ближнего боя, как правило, является "Легендарный" (Legendary).</br>
+    <br>Лучшее оружие класса — Зенит, обладающее отличным уроном, однако его высочайшая сложность крафта, требующая неоднократного убийства главного босса, а также многоярусного выбивания редких мечей делает его одним из самых труднодоступных оружий.</br>
+    <br><b>Стрелок</b></br>
+    <br>Стрелок (Gunner) - класс, использующий дистанционное оружие, потребляющее различные боеприпасы. Развитие данного класса происходит через усиление механики экономии боеприпаса, увеличении урона через перманентный критический урон у отдельных видов оружия и появления механики невидимости (Грибная броня, Броня вихря). Имеет среднюю степень защиты.</br>
+    <br>Лучшей броней для данного класса является броня вихря</br>
+    <br>Лучшей модификацией оружия дальнего боя, как правило, является "Нереальный" (Unreal).</br>
+    <br>Лучшее оружие класса в большинстве игровых ситуаций — S.D.M.G (дроп с Лунного Лорда).</br>
+    <br><b>Метатель</b></br>
+    <br>Метатель (Thrower) — дохардмодный класс, использующий метательное оружие. Имеет низкую степень защиты. С версии 1.4.0.1 был соединён со Стрелком, не существует в актуальной версии игры.</br>
+    <br>Самой лучшей бронёй для данного класса является ископаемая броня </br>
+    <br>Одноразовое метательное оружие не может иметь модификаций.</br>
+    <br><b>Маг</b></br>
+    <br> Маг (Sorcerer) - класс, использующий дистанционное магическое оружие, механика которого основывается на израсходовании Маны и механиках ее восстановления (Усиление естественной регенерации, восстановление через зелья, восстановление после получения урона и сбор звезд маны). Со временем класс получает улучшения в виде получения бонусов от магических атак (Спектральная броня, Броня туманности). Имеет низкую степень защиты.</br>
+    <br>Лучшей броней для данного класса является броня туманности </br>
+    <br>Лучшей модификацией магического оружия является "Мифический" (Mythical).</br>
+    <br>Лучшее оружие в большинстве ситуаций — Последняя Призма (дроп с Лунного Лорда) - обладает огромнейшим уроном, как по толпе, так и по одному врагу, однако ей надо уметь пользоваться.</br>
+    <br><b></b>Призыватель</b></br>
+    <br>Призыватель (Summoner) — класс, призывающий союзных прислужников (миньонов), управляющий и усиливающий их при помощи хлыста. Очень сильно зависит от аксессуаров (Автоатака хлыста, увеличение количества прислужников) . Со временем класс получает улучшения в виде увеличения количества прислужников, повышения их эффективности и появления дополнительных эффектов у хлыстов. Стоит отметить, что среди призываемых существ есть спутники (двигающиеся за игроком) и башни (статичные объекты, число которых увеличивается за счет отдельных аксессуаров из дополнения «Этерианский Кристалл»), поэтому актуально говорить об условном делении на подклассы — призыватель башен и призыватель спутников. Имеет низкую степень защиты.</br>
+    <br>Лучшей бронёй для призывателя спутников является броня звёздной пыли, а для призывателя башен — Красная броня всадника, броня шиноби-диверсанта, броня рыцаря Вальхаллы, броня тёмного творца, покупаемые за медали защитника у Трактирщика.</br>
+    <br>Лучшей модификацией призывающего оружия, как правило, является "Беспощадный" (Ruthless)</br>
+    <br>В арсенал призывателя входят посохи призыва Посох звёздного дракона.png(обычного призывателя спутников) |Посох лунных порталов.png | Лунный портал.png (для призывателя башен), а также различные аксессуары и баффы для увеличения числа прислужников.</br>
+    <br>Лучшее оружие в большинстве ситуаций — Террапризма и Посох Звездного Дракона.</br>
+  </p>
+  </article> 
+  <div align="center">
+    <style>
+        .nubex {
+        font-size: 30px;
+        }
+       </style>
+       
+  <body>
+    <div class="nubex">
+      <p><br>Ссылки на:</br></p>
+    <br><a href="C:\Users\sasha\OneDrive\Desktop\sait\img terraria.html">NPS Terraria</a>
+    <br><a href="C:\Users\sasha\OneDrive\Desktop\sait\audio terraria.html">Темы из игры</a>
+    <br><a href="C:\Users\sasha\OneDrive\Desktop\sait\video terraria.html">Обзор игры</a>
+    </body>  
+   </h2>   <!-- ---------- «Подвал» всей статьи ----------------------- -->
+    <footer class="site_footer">
+       
+      <p>
+      Дата публикации: <time datetime="2022-10-22 17:00">22 октября</time>
+      </p>
+
+
+    <footer class="site_footer">    
+<!--Имя владельца-->
+        <address>Дегтярёв Александр</address> 
+      </p>
+  </footer>
+        
+</body>
+</html>
